@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Bampro Painting | Gold Coast Painters | Residential, Commercial &amp; Strata</title>
+  <meta name="description" content="Residential, commercial, strata and new construction painting across the Gold Coast and Tweed. QBCC 15633123. $20M insured. Call 0411 804 355.">
+  <meta property="og:title" content="Bampro Painting | Gold Coast Painters">
+  <meta property="og:description" content="Precision. Protection. Perfection. Residential, commercial, strata and new construction painting.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="vendor/leaflet.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#top" class="brand" aria-label="Bampro Painting home">
+      <img src="images/logo.png" alt="Bampro Painting. Precision. Protection. Perfection." width="900" height="434">
+    </a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#top">Home</a>
+      <a href="#about">About us</a>
+      <div class="nav-drop">
+        <button type="button" class="nav-drop-btn" aria-expanded="false" aria-controls="svc-menu">Services<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5L6 8l3.5-3.5"/></svg></button>
+        <div class="drop-menu" id="svc-menu">
+          <a href="#services" data-tab="svc-tab-residential">Residential</a>
+          <a href="#services" data-tab="svc-tab-commercial">Commercial</a>
+          <a href="#services" data-tab="svc-tab-strata">Body Corporate / Strata</a>
+          <a href="#services" data-tab="svc-tab-construction">New Construction</a>
+        </div>
+      </div>
+      <a href="#work">Before &amp; after</a>
+      <a href="#areas">Where we work</a>
+      <a href="#promise" class="nav-phone-only">Our promise</a>
+      <a href="#contact" class="nav-mobile-only">Get a quote</a>
+    </nav>
+    <div class="header-actions">
+      <a href="#contact" class="btn btn-green">Get in touch</a>
+      <a href="https://wa.me/61411804355?text=Hi%20Bampro%2C%20I%27d%20like%20a%20quote%20for%20some%20painting." class="phone-icon wa-icon" target="_blank" rel="noopener" aria-label="Message us on WhatsApp">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z"/><path class="wa-dots" d="M8.5 12h.01M12 12h.01M15.5 12h.01"/></svg>
+      </a>
+    </div>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO — background photo: replace images/hero.jpg (landscape, 1920px wide) -->
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <h1 class="hero-title">Beautiful finishes, built to <span class="painted"><span class="stroke" aria-hidden="true"></span><span class="word">last.</span></span></h1>
+      </div>
+      <aside class="why-card" aria-labelledby="why-title">
+        <h2 id="why-title">Why choose Bampro</h2>
+        <ul class="checks">
+          <li><b>Practical solutions</b> Tailored to your property and budget.</li>
+          <li><b>Honest advice</b> Only what your project really needs.</li>
+          <li><b>Work that adds value</b> Details that look better and last longer.</li>
+          <li><b>Straightforward experience</b> Clear, realistic and hassle-free.</li>
+        </ul>
+        <div class="trust">
+          <span class="trust-item"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9.5"/></svg>QBCC 15633123</span>
+          <span class="trust-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.2-8 9-4.6-.8-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-4.5"/></svg>$20M insured</span>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+
+  <!-- ABOUT US -->
+  <section class="section" id="about">
+    <div class="wrap">
+      <div class="about-top">
+        <div class="about-intro">
+          <p class="eyebrow">About us</p>
+          <h2>BAMPRO was built around a simple idea: good painting and decorating solutions should be within everyone&rsquo;s reach.</h2>
+          <div class="about-body">
+            <p>We believe there is more to this industry than simply painting walls. It&rsquo;s about understanding people&rsquo;s needs, finding the right solutions and making the most of every project, regardless of its size or budget.</p>
+            <p>Our approach is to keep things practical, honest and straightforward. We want to make it easier for people to access solutions that suit their spaces, their expectations and what they can invest.</p>
+            <p>As we grow, our vision is to bring together different painting techniques, finishes and ideas, creating a business that continues to evolve and offer more to its customers.</p>
+          </div>
+          <p class="about-close">We&rsquo;re not here just to paint. We&rsquo;re here to make good spaces and good solutions more accessible.</p>
+        </div>
+        <figure class="team-photo">
+          <img src="images/team.jpg" alt="Bampro painter rolling a fresh coat on a wall in a waterfront home" width="900" height="1125" loading="lazy">
+          <figcaption><span class="dot-live" aria-hidden="true"></span>On the job, every day</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="promise" id="promise">
+    <div class="wrap promise-inner">
+      <p class="eyebrow">Our promise</p>
+      <p class="promise-lead">At BAMPRO Painting, we don&rsquo;t just paint spaces &mdash; we take pride in transforming and protecting properties.</p>
+      <p class="promise-body">Every project matters, every detail counts, and every finish represents our commitment to quality.</p>
+      <p class="signature"><span>BAMPRO Painting</span>Precision. Protection. <b>Perfection.</b></p>
+      <div class="trust trust-dark">
+        <span class="trust-item"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9.5"/></svg>QBCC 15633123</span>
+        <span class="trust-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.2-8 9-4.6-.8-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-4.5"/></svg>$20M insured</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <div><p class="eyebrow">Services</p><h2>What we paint</h2></div>
+        <p>From family homes to strata complexes and new builds. Choose a category to see what&rsquo;s included.</p>
+      </div>
+      <div class="pill-tabs svc-tabs" role="tablist" aria-label="Service type"><button role="tab" id="svc-tab-residential" aria-controls="svc-residential" aria-selected="true">Residential</button><button role="tab" id="svc-tab-commercial" aria-controls="svc-commercial" aria-selected="false" tabindex="-1">Commercial</button><button role="tab" id="svc-tab-strata" aria-controls="svc-strata" aria-selected="false" tabindex="-1">Body Corporate / Strata</button><button role="tab" id="svc-tab-construction" aria-controls="svc-construction" aria-selected="false" tabindex="-1">New Construction</button></div>
+        <div class="svc-panel" id="svc-residential" role="tabpanel" aria-labelledby="svc-tab-residential">
+          <article class="svc-card" id="svc-interior">
+            <span class="svc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="14" height="6" rx="1.5"/><path d="M17 6h3v5h-8v3"/><rect x="10.5" y="14" width="3" height="7" rx="1"/></svg></span>
+            <h3>Interior Painting</h3>
+            <p>Refresh a lived-in home or finish off a renovation. We work room by room and keep disruption low.</p>
+            <ul class="checks"><li>Whole-home or selected rooms</li><li>Walls, ceilings, doors and trims</li><li>Renovated, new or lived-in homes</li><li>Furniture and floors fully protected</li></ul>
+          </article>
+          <article class="svc-card" id="svc-exterior">
+            <span class="svc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-5h4v5"/></svg></span>
+            <h3>Exterior Painting</h3>
+            <p>Protect your home from sun, salt and rain. We fix peeling, cracking and faded surfaces before any paint goes on.</p>
+            <ul class="checks"><li>Weatherboard, timber and render</li><li>Masonry, fibre cement and brick</li><li>Fences, pergolas and decks</li><li>Repairs and preparation included</li></ul>
+          </article>
+          <article class="svc-card" id="svc-roof">
+            <span class="svc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 12l10-8 10 8"/><path d="M5 9.6l7-5.6 7 5.6"/><path d="M5 11v9h14v-9"/><path d="M15 6V3h2.5v5"/></svg></span>
+            <h3>Roof Painting</h3>
+            <p>Bring a tired roof back to life and lift the look of the whole house.</p>
+            <ul class="checks"><li>Tile and metal roofs</li><li>Cleaning and minor repairs</li><li>Primer and protective coatings</li><li>Longer life for your roof</li></ul>
+          </article>
+        </div>
+        <div class="svc-panel" id="svc-commercial" role="tabpanel" aria-labelledby="svc-tab-commercial" hidden>
+          <article class="svc-card" id="svc-office">
+            <span class="svc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2"/></svg></span>
+            <h3>Offices &amp; Retail</h3>
+            <p>Sharp, professional spaces that make the right first impression.</p>
+            <ul class="checks"><li>Offices and fit-outs</li><li>Shops and showrooms</li><li>After-hours scheduling</li><li>Minimal disruption to trade</li></ul>
+          </article>
+          <article class="svc-card" id="svc-cafe">
+            <span class="svc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 9h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/><path d="M17 11h1.5a2.5 2.5 0 0 1 0 5H17"/><path d="M8 3v3M12 3v3"/></svg></span>
+            <h3>Restaurants &amp; Gyms</h3>
+            <p>Durable finishes for busy venues that need to look good every day.</p>
+            <ul class="checks"><li>Restaurants and cafés</li><li>Gyms and fitness studios</li><li>Hard-wearing, washable coatings</li><li>Work planned around opening hours</li></ul>
+          </article>
+          <article class="svc-card" id="svc-factory">
+            <span class="svc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 21V10l6 4V10l6 4V6h6v15z"/><path d="M7 17h2M12 17h2M17 17h2"/></svg></span>
+            <h3>Warehouses &amp; Factories</h3>
+            <p>Practical, long-lasting coatings for working sites.</p>
+            <ul class="checks"><li>Warehouses</li><li>Factories</li><li>Large walls and ceilings</li><li>Safe, organised work sites</li></ul>
+          </article>
+        </div>
+        <div class="svc-panel" id="svc-strata" role="tabpanel" aria-labelledby="svc-tab-strata" hidden>
+          <article class="svc-card" id="svc-apartment">
+            <span class="svc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M8 7h3M13 7h3M8 11h3M13 11h3M10 21v-4h4v4"/></svg></span>
+            <h3>Apartment Complexes</h3>
+            <p>Full repaints that protect the building and keep its value up.</p>
+            <ul class="checks"><li>Interior and exterior repaints</li><li>Clear updates for residents</li><li>Staged work to limit disruption</li><li>Detailed written scopes</li></ul>
+          </article>
+          <article class="svc-card" id="svc-common">
+            <span class="svc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M6 21V8h12v13"/><path d="M9 21v-6h6v6"/><path d="M4 8l8-5 8 5"/></svg></span>
+            <h3>Common Areas</h3>
+            <p>Keep shared spaces clean, bright and welcoming.</p>
+            <ul class="checks"><li>Lobbies and hallways</li><li>Stairwells and walkways</li><li>Doors, rails and trims</li><li>Quick turnaround</li></ul>
+          </article>
+          <article class="svc-card" id="svc-maintenance">
+            <span class="svc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg></span>
+            <h3>Ongoing Maintenance</h3>
+            <p>Planned touch-ups that keep the property looking its best year round.</p>
+            <ul class="checks"><li>Scheduled maintenance</li><li>Touch-ups and repairs</li><li>One point of contact</li><li>Reliable, repeat service</li></ul>
+          </article>
+        </div>
+        <div class="svc-panel" id="svc-construction" role="tabpanel" aria-labelledby="svc-tab-construction" hidden>
+          <article class="svc-card" id="svc-newhome">
+            <span class="svc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M12 13v5M9.5 15.5h5"/></svg></span>
+            <h3>New Homes &amp; Townhouses</h3>
+            <p>Clean, consistent finishes ready for handover.</p>
+            <ul class="checks"><li>New homes</li><li>Townhouses</li><li>Interior and exterior</li><li>Work to builder timelines</li></ul>
+          </article>
+          <article class="svc-card" id="svc-development">
+            <span class="svc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="9" width="7" height="12"/><rect x="14" y="5" width="7" height="16"/><path d="M6 13h1M6 17h1M17 9h1M17 13h1M17 17h1"/></svg></span>
+            <h3>Residential Developments</h3>
+            <p>Reliable crews for multi-dwelling projects.</p>
+            <ul class="checks"><li>Multi-unit developments</li><li>Same quality in every unit</li><li>Coordination with site managers</li><li>Handover-ready finish</li></ul>
+          </article>
+          <article class="svc-card" id="svc-building">
+            <span class="svc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 21V5l8-3 8 3v16"/><path d="M8 9h8M8 13h8M8 17h8"/></svg></span>
+            <h3>New Buildings</h3>
+            <p>New commercial and mixed-use builds painted to spec.</p>
+            <ul class="checks"><li>New commercial buildings</li><li>Painting to specification</li><li>Clear scheduling with builders</li><li>Tidy, safe site practices</li></ul>
+          </article>
+        </div>
+    </div>
+  </section>
+
+  <!-- HOW WE WORK -->
+  <section class="section process" id="process">
+    <div class="wrap">
+      <div class="section-head">
+        <div><p class="eyebrow">How we work</p><h2>Six clear steps</h2></div>
+        <p>A simple process, so you always know what happens next.</p>
+      </div>
+      <ol class="steps">
+        <li><span class="step-num">01</span><h3>Initial Enquiry</h3><p>Tell us about the property, the surfaces and your timing.</p></li>
+        <li><span class="step-num">02</span><h3>Site Assessment</h3><p>We inspect the site and talk through access, prep and finish.</p></li>
+        <li><span class="step-num">03</span><h3>Written Scope &amp; Pricing</h3><p>A clear quote: what is included, key assumptions and any options.</p></li>
+        <li><span class="step-num">04</span><h3>Scheduling</h3><p>We lock in dates, site access and how we will keep you updated.</p></li>
+        <li><span class="step-num">05</span><h3>Painting &amp; Coordination</h3><p>The approved work, completed under on-site supervision.</p></li>
+        <li><span class="step-num">06</span><h3>Final Review</h3><p>We walk the job with you and close out every handover item.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- BEFORE & AFTER: real projects only, edit PROJECTS in the build script to add more -->
+  <section class="section work" id="work">
+    <div class="wrap">
+      <div class="section-head">
+        <div><p class="eyebrow">Our work</p><h2>Before &amp; after</h2></div>
+        <p>Real Bampro projects. Drag the roller to see the difference.</p>
+      </div>
+      <div class="pill-tabs ba-tabs" role="tablist" aria-label="Project"><button role="tab" id="tab-house" aria-controls="ba-house" aria-selected="true">Full exterior</button><button role="tab" id="tab-detail" aria-controls="ba-detail" aria-selected="false" tabindex="-1">Weatherboard close-up</button><button role="tab" id="tab-stairs" aria-controls="ba-stairs" aria-selected="false" tabindex="-1">Timber stairs</button></div>
+        <div class="ba-panel ba-feature ba-wide" id="ba-house" role="tabpanel" aria-labelledby="tab-house">
+          <div class="ba" style="--pos:50%">
+            <img src="images/after-house.jpg" alt="Two-storey home after painting" class="ba-after" loading="lazy" width="1600" height="900">
+            <img src="images/before-house.jpg" alt="Two-storey home before painting" class="ba-before" loading="lazy" width="1600" height="900">
+            <span class="ba-tag ba-tag-before">Before</span>
+            <span class="ba-tag ba-tag-after">After</span>
+            <div class="ba-handle" aria-hidden="true">
+              <svg class="roller" viewBox="0 0 64 120">
+                <rect x="14" y="4" width="36" height="84" rx="7" fill="#7DC242"/>
+                <rect x="20" y="12" width="5" height="68" rx="2.5" fill="#fff" opacity=".35"/>
+                <path d="M50 46 H58 V98 H32 V104" stroke="#0a0d0c" stroke-width="5" fill="none" stroke-linejoin="round"/>
+                <rect x="25" y="100" width="14" height="18" rx="4" fill="#0a0d0c"/>
+              </svg>
+            </div>
+            <input type="range" min="0" max="100" value="50" class="ba-range" aria-label="Drag to compare two-storey home before and after">
+          </div>
+          <div class="ba-story">
+            <p class="eyebrow">Exterior repaint</p>
+            <h3>Two-storey home</h3>
+            <p>Faded, stained weatherboard brought back to a crisp white, with the charcoal and grey render refreshed for a sharp, modern contrast.</p>
+            <ul class="checks"><li>Weatherboard and render</li><li>Full surface preparation</li><li>Even, lasting finish</li></ul>
+          </div>
+        </div>
+        <div class="ba-panel ba-feature ba-tall" id="ba-detail" role="tabpanel" aria-labelledby="tab-detail" hidden>
+          <div class="ba" style="--pos:50%">
+            <img src="images/after-detail.jpg" alt="Weatherboard detail after painting" class="ba-after" loading="lazy" width="960" height="1280">
+            <img src="images/before-detail.jpg" alt="Weatherboard detail before painting" class="ba-before" loading="lazy" width="960" height="1280">
+            <span class="ba-tag ba-tag-before">Before</span>
+            <span class="ba-tag ba-tag-after">After</span>
+            <div class="ba-handle" aria-hidden="true">
+              <svg class="roller" viewBox="0 0 64 120">
+                <rect x="14" y="4" width="36" height="84" rx="7" fill="#7DC242"/>
+                <rect x="20" y="12" width="5" height="68" rx="2.5" fill="#fff" opacity=".35"/>
+                <path d="M50 46 H58 V98 H32 V104" stroke="#0a0d0c" stroke-width="5" fill="none" stroke-linejoin="round"/>
+                <rect x="25" y="100" width="14" height="18" rx="4" fill="#0a0d0c"/>
+              </svg>
+            </div>
+            <input type="range" min="0" max="100" value="50" class="ba-range" aria-label="Drag to compare weatherboard detail before and after">
+          </div>
+          <div class="ba-story">
+            <p class="eyebrow">Up close</p>
+            <h3>Weatherboard detail</h3>
+            <p>Rust marks, stains and patchy old paint gone. Every board cleaned, prepped and recoated so the finish looks as good close up as it does from the street.</p>
+            <ul class="checks"><li>Stains and rust marks treated</li><li>Boards prepped and recoated</li><li>Clean lines at every edge</li></ul>
+          </div>
+        </div>
+        <div class="ba-panel ba-feature ba-tall" id="ba-stairs" role="tabpanel" aria-labelledby="tab-stairs" hidden>
+          <div class="ba" style="--pos:50%">
+            <img src="images/after-stairs.jpg" alt="Timber staircase after painting" class="ba-after" loading="lazy" width="960" height="1280">
+            <img src="images/before-stairs.jpg" alt="Timber staircase before painting" class="ba-before" loading="lazy" width="960" height="1280">
+            <span class="ba-tag ba-tag-before">Before</span>
+            <span class="ba-tag ba-tag-after">After</span>
+            <div class="ba-handle" aria-hidden="true">
+              <svg class="roller" viewBox="0 0 64 120">
+                <rect x="14" y="4" width="36" height="84" rx="7" fill="#7DC242"/>
+                <rect x="20" y="12" width="5" height="68" rx="2.5" fill="#fff" opacity=".35"/>
+                <path d="M50 46 H58 V98 H32 V104" stroke="#0a0d0c" stroke-width="5" fill="none" stroke-linejoin="round"/>
+                <rect x="25" y="100" width="14" height="18" rx="4" fill="#0a0d0c"/>
+              </svg>
+            </div>
+            <input type="range" min="0" max="100" value="50" class="ba-range" aria-label="Drag to compare timber staircase before and after">
+          </div>
+          <div class="ba-story">
+            <p class="eyebrow">Interior</p>
+            <h3>Timber staircase</h3>
+            <p>Bare, marked timber prepped and stained to bring out the natural grain. A warm, even finish that ties the stairs into the rest of the home.</p>
+            <ul class="checks"><li>Surface preparation</li><li>Even stain finish</li><li>Clean, protected site</li></ul>
+          </div>
+        </div>
+      <p class="ba-more">We add new projects as we finish them. <a href="#contact">Want a result like this? Get in touch.</a></p>
+    </div>
+  </section>
+
+
+  <!-- WHERE WE WORK -->
+  <section class="section" id="areas">
+    <div class="wrap areas-grid">
+      <div class="areas-copy">
+        <p class="eyebrow">Where we work</p>
+        <h2>Across the Gold Coast <span class="accent">&amp; Tweed.</span></h2>
+        <p class="areas-lead">From Coomera down to Kingscliff. See your suburb? We paint there. Don&rsquo;t see it? <a href="tel:0411804355">Give us a call</a>.</p>
+        <label class="area-pick">
+          <span>Locations we cover <small>(37 suburbs)</small></span>
+          <select id="area-select">
+            <option value="">Find your suburb</option><optgroup label="Northern Gold Coast"><option>Arundel</option><option>Biggera Waters</option><option>Coombabah</option><option>Coomera</option><option>Helensvale</option><option>Hope Island</option><option>Labrador</option><option>Pacific Pines</option><option>Runaway Bay</option><option>Upper Coomera</option></optgroup><optgroup label="Central Gold Coast"><option>Benowa</option><option>Broadbeach</option><option>Bundall</option><option>Burleigh Heads</option><option>Carrara</option><option>Main Beach</option><option>Mermaid Beach</option><option>Miami</option><option>Mudgeeraba</option><option>Nerang</option><option>Robina</option><option>Southport</option><option>Surfers Paradise</option><option>Varsity Lakes</option></optgroup><optgroup label="Southern Gold Coast"><option>Bilinga</option><option>Coolangatta</option><option>Currumbin</option><option>Elanora</option><option>Kirra</option><option>Palm Beach</option><option>Tallai</option><option>Tallebudgera Valley</option><option>Tugun</option></optgroup><optgroup label="Northern NSW"><option>Banora Point</option><option>Casuarina</option><option>Kingscliff</option><option>Tweed Heads</option></optgroup>
+          </select>
+          <span class="area-found" id="area-found" aria-live="polite"></span>
+        </label>
+        <div class="suburbs" id="suburbs">
+          <p class="suburbs-hint">37 suburbs &middot; tap one to find it on the map</p>
+            <div class="region r-north"><h3><span class="swatch" aria-hidden="true"></span>Northern Gold Coast <small>10</small></h3><ul><li><button type="button" data-s="Arundel">Arundel</button></li><li><button type="button" data-s="Biggera Waters">Biggera Waters</button></li><li><button type="button" data-s="Coombabah">Coombabah</button></li><li><button type="button" data-s="Coomera">Coomera</button></li><li><button type="button" data-s="Helensvale">Helensvale</button></li><li><button type="button" data-s="Hope Island">Hope Island</button></li><li><button type="button" data-s="Labrador">Labrador</button></li><li><button type="button" data-s="Pacific Pines">Pacific Pines</button></li><li><button type="button" data-s="Runaway Bay">Runaway Bay</button></li><li><button type="button" data-s="Upper Coomera">Upper Coomera</button></li></ul></div>
+            <div class="region r-central"><h3><span class="swatch" aria-hidden="true"></span>Central Gold Coast <small>14</small></h3><ul><li><button type="button" data-s="Benowa">Benowa</button></li><li><button type="button" data-s="Broadbeach">Broadbeach</button></li><li><button type="button" data-s="Bundall">Bundall</button></li><li><button type="button" data-s="Burleigh Heads">Burleigh Heads</button></li><li><button type="button" data-s="Carrara">Carrara</button></li><li><button type="button" data-s="Main Beach">Main Beach</button></li><li><button type="button" data-s="Mermaid Beach">Mermaid Beach</button></li><li><button type="button" data-s="Miami">Miami</button></li><li><button type="button" data-s="Mudgeeraba">Mudgeeraba</button></li><li><button type="button" data-s="Nerang">Nerang</button></li><li><button type="button" data-s="Robina">Robina</button></li><li><button type="button" data-s="Southport">Southport</button></li><li><button type="button" data-s="Surfers Paradise">Surfers Paradise</button></li><li><button type="button" data-s="Varsity Lakes">Varsity Lakes</button></li></ul></div>
+            <div class="region r-south"><h3><span class="swatch" aria-hidden="true"></span>Southern Gold Coast <small>9</small></h3><ul><li><button type="button" data-s="Bilinga">Bilinga</button></li><li><button type="button" data-s="Coolangatta">Coolangatta</button></li><li><button type="button" data-s="Currumbin">Currumbin</button></li><li><button type="button" data-s="Elanora">Elanora</button></li><li><button type="button" data-s="Kirra">Kirra</button></li><li><button type="button" data-s="Palm Beach">Palm Beach</button></li><li><button type="button" data-s="Tallai">Tallai</button></li><li><button type="button" data-s="Tallebudgera Valley">Tallebudgera Valley</button></li><li><button type="button" data-s="Tugun">Tugun</button></li></ul></div>
+            <div class="region r-nsw"><h3><span class="swatch" aria-hidden="true"></span>Northern NSW <small>4</small></h3><ul><li><button type="button" data-s="Banora Point">Banora Point</button></li><li><button type="button" data-s="Casuarina">Casuarina</button></li><li><button type="button" data-s="Kingscliff">Kingscliff</button></li><li><button type="button" data-s="Tweed Heads">Tweed Heads</button></li></ul></div>
+        </div>
+      </div>
+      <div class="map-wrap">
+        <figure class="van-photo">
+          <img src="images/van.jpg" alt="The Bampro Painting van parked on a Gold Coast street" width="1000" height="750" loading="lazy">
+          <figcaption>Spot the Bampro van in your street.</figcaption>
+        </figure>
+        <div class="map-box">
+          <div id="street-map" class="street-map" role="region" aria-label="Street map of the suburbs Bampro Painting services, from Coomera to Kingscliff"></div>
+          <script type="application/json" id="suburb-data">[{"n": "Coomera", "r": "Northern Gold Coast", "k": "north", "lat": -27.862, "lon": 153.328}, {"n": "Upper Coomera", "r": "Northern Gold Coast", "k": "north", "lat": -27.873, "lon": 153.288}, {"n": "Hope Island", "r": "Northern Gold Coast", "k": "north", "lat": -27.866, "lon": 153.352}, {"n": "Helensvale", "r": "Northern Gold Coast", "k": "north", "lat": -27.918, "lon": 153.336}, {"n": "Pacific Pines", "r": "Northern Gold Coast", "k": "north", "lat": -27.94, "lon": 153.311}, {"n": "Coombabah", "r": "Northern Gold Coast", "k": "north", "lat": -27.91, "lon": 153.366}, {"n": "Arundel", "r": "Northern Gold Coast", "k": "north", "lat": -27.938, "lon": 153.36}, {"n": "Runaway Bay", "r": "Northern Gold Coast", "k": "north", "lat": -27.913, "lon": 153.398}, {"n": "Biggera Waters", "r": "Northern Gold Coast", "k": "north", "lat": -27.931, "lon": 153.4}, {"n": "Labrador", "r": "Northern Gold Coast", "k": "north", "lat": -27.945, "lon": 153.401}, {"n": "Southport", "r": "Central Gold Coast", "k": "central", "lat": -27.967, "lon": 153.405}, {"n": "Main Beach", "r": "Central Gold Coast", "k": "central", "lat": -27.98, "lon": 153.426}, {"n": "Surfers Paradise", "r": "Central Gold Coast", "k": "central", "lat": -28.0, "lon": 153.429}, {"n": "Benowa", "r": "Central Gold Coast", "k": "central", "lat": -28.008, "lon": 153.39}, {"n": "Bundall", "r": "Central Gold Coast", "k": "central", "lat": -28.009, "lon": 153.408}, {"n": "Carrara", "r": "Central Gold Coast", "k": "central", "lat": -28.02, "lon": 153.37}, {"n": "Nerang", "r": "Central Gold Coast", "k": "central", "lat": -27.994, "lon": 153.335}, {"n": "Broadbeach", "r": "Central Gold Coast", "k": "central", "lat": -28.032, "lon": 153.431}, {"n": "Mermaid Beach", "r": "Central Gold Coast", "k": "central", "lat": -28.048, "lon": 153.438}, {"n": "Miami", "r": "Central Gold Coast", "k": "central", "lat": -28.069, "lon": 153.442}, {"n": "Robina", "r": "Central Gold Coast", "k": "central", "lat": -28.077, "lon": 153.385}, {"n": "Varsity Lakes", "r": "Central Gold Coast", "k": "central", "lat": -28.088, "lon": 153.41}, {"n": "Mudgeeraba", "r": "Central Gold Coast", "k": "central", "lat": -28.083, "lon": 153.366}, {"n": "Burleigh Heads", "r": "Central Gold Coast", "k": "central", "lat": -28.09, "lon": 153.45}, {"n": "Tallai", "r": "Southern Gold Coast", "k": "south", "lat": -28.061, "lon": 153.322}, {"n": "Palm Beach", "r": "Southern Gold Coast", "k": "south", "lat": -28.114, "lon": 153.467}, {"n": "Elanora", "r": "Southern Gold Coast", "k": "south", "lat": -28.135, "lon": 153.45}, {"n": "Tallebudgera Valley", "r": "Southern Gold Coast", "k": "south", "lat": -28.12, "lon": 153.39}, {"n": "Currumbin", "r": "Southern Gold Coast", "k": "south", "lat": -28.135, "lon": 153.482}, {"n": "Tugun", "r": "Southern Gold Coast", "k": "south", "lat": -28.148, "lon": 153.495}, {"n": "Bilinga", "r": "Southern Gold Coast", "k": "south", "lat": -28.16, "lon": 153.51}, {"n": "Kirra", "r": "Southern Gold Coast", "k": "south", "lat": -28.167, "lon": 153.522}, {"n": "Coolangatta", "r": "Southern Gold Coast", "k": "south", "lat": -28.168, "lon": 153.537}, {"n": "Tweed Heads", "r": "Northern NSW", "k": "nsw", "lat": -28.18, "lon": 153.545}, {"n": "Banora Point", "r": "Northern NSW", "k": "nsw", "lat": -28.213, "lon": 153.532}, {"n": "Kingscliff", "r": "Northern NSW", "k": "nsw", "lat": -28.257, "lon": 153.576}, {"n": "Casuarina", "r": "Northern NSW", "k": "nsw", "lat": -28.298, "lon": 153.569}]</script>
+          <p class="map-hint" id="map-hint">Pick a suburb to fly there</p>
+          <div class="map-card" id="map-card" hidden>
+            <div><b id="mc-name"></b><small id="mc-region"></small></div>
+            <a href="#contact" class="mc-quote">Get a quote</a>
+            <button type="button" class="mc-reset" aria-label="Show the whole map"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="cta-band">
+    <div class="wrap cta-inner">
+      <h2>Ready to start your project?</h2>
+      <div class="hero-ctas">
+        <a href="tel:0411804355" class="btn btn-dark">Call 0411 804 355</a>
+        <a href="#contact" class="btn btn-white">Get in touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="wrap contact-grid">
+      <div class="contact-info">
+        <p class="eyebrow">Get a quote</p>
+        <h2>Let&rsquo;s talk about your project.</h2>
+        <p>Tell us what you need and we&rsquo;ll get back to you within one business day.</p>
+        <dl>
+          <dt>Phone</dt>
+          <dd><a href="tel:0411804355">0411 804 355</a></dd>
+          <dt>Email</dt>
+          <dd><a href="mailto:info@bampropainting.com.au">info@bampropainting.com.au</a></dd>
+          <dt>Licence &amp; insurance</dt>
+          <dd>QBCC 15633123 &middot; $20M insured</dd>
+        </dl>
+      </div>
+
+      <!-- Netlify Forms: works automatically once deployed on Netlify -->
+      <form class="quote-form" name="quote" method="POST" data-netlify="true" netlify-honeypot="company" action="/thanks.html" enctype="multipart/form-data">
+        <input type="hidden" name="form-name" value="quote">
+        <p class="hidden"><label>Leave this empty <input name="company"></label></p>
+        <div class="field-row">
+          <label>Name<input type="text" name="name" autocomplete="name" required></label>
+          <label>Phone<input type="tel" name="phone" autocomplete="tel" required></label>
+        </div>
+        <label>Email<input type="email" name="email" autocomplete="email" required></label>
+        <label>Suburb<input type="text" name="suburb" autocomplete="address-level2"></label>
+        <label>Type of project
+          <select name="service" required>
+            <option value="">Choose one</option>
+            <option>Residential – interior</option>
+            <option>Residential – exterior</option>
+            <option>Roof painting</option>
+            <option>Commercial</option>
+            <option>Body corporate / strata</option>
+            <option>New construction</option>
+            <option>Not sure yet</option>
+          </select>
+        </label>
+        <label>Project details<textarea name="message" rows="4" placeholder="Size, surfaces, timing, anything we should know"></textarea></label>
+        <div class="upload">
+          <span class="upload-label">Photos or videos <small>(optional, helps us quote faster)</small></span>
+          <label class="dropzone" for="upload-pick">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V4M7 9l5-5 5 5"/><path d="M4 15v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"/></svg>
+            <span><b>Add photos or videos</b><br>Tap to choose, or drag them here</span>
+          </label>
+          <input type="file" id="upload-pick" accept="image/*,video/*" multiple class="sr-only">
+          <!-- Netlify reads these named fields; the script fills them -->
+          <input type="file" name="attachment1" hidden><input type="file" name="attachment2" hidden><input type="file" name="attachment3" hidden><input type="file" name="attachment4" hidden><input type="file" name="attachment5" hidden>
+          <ul class="thumbs" id="thumbs" aria-live="polite"></ul>
+          <div class="upload-meter" hidden><span></span></div>
+          <p class="upload-note" id="upload-note">Up to 5 files, 8 MB in total. Photos are resized automatically. For longer videos, text them to 0411 804 355.</p>
+        </div>
+        <p class="form-msg" id="form-msg" role="alert" hidden></p>
+        <button type="submit" class="btn btn-green btn-full">Send my enquiry</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <img src="images/logo.png" alt="Bampro Painting. Precision. Protection. Perfection." class="footer-logo" width="900" height="434">
+    <div>
+      <p><a href="tel:0411804355">0411 804 355</a><br><a href="mailto:info@bampropainting.com.au">info@bampropainting.com.au</a></p>
+      <p class="small">QBCC 15633123 &nbsp;|&nbsp; $20M insured</p>
+      <p class="small">&copy; <span id="year"></span> Bampro Painting. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<a href="tel:0411804355" class="mobile-call">Call 0411 804 355</a>
+
+<script src="vendor/leaflet.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
