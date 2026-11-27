@@ -185,7 +185,7 @@ subBtns.forEach(b => {
 
 // Gentle reveal as sections scroll into view
 if (!reduce && 'IntersectionObserver' in window) {
-  const targets = document.querySelectorAll('.section-head, .about-intro, .values li, .steps li, .promise-inner, .suburbs, .map-wrap, .contact-grid > *');
+  const targets = document.querySelectorAll('.section-head, .about-intro, .values li, .steps li, .promise-inner, .suburbs, .map-wrap, .reviews-grid, .contact-grid > *');
   targets.forEach(el => el.classList.add('reveal'));
   const rv = new IntersectionObserver(entries => entries.forEach(e => {
     if (e.isIntersecting) { e.target.classList.add('in'); rv.unobserve(e.target); }
@@ -313,6 +313,7 @@ drop.querySelectorAll('a').forEach(a => a.addEventListener('click', e => {
   form.addEventListener('submit', async e => {
     e.preventDefault();
     msg.hidden = true;
+    if (/^(localhost|127\.|192\.168\.|10\.)/.test(location.hostname)) { msg.textContent = 'Preview only: the form sends from the live website, not this local preview.'; msg.hidden = false; return; }
     if (total() > MAX_BYTES) { msg.textContent = 'Your files are over 7.5 MB in total. Please remove one before sending.'; msg.hidden = false; return; }
     const btn = form.querySelector('button[type="submit"]');
     const label = btn.textContent;
