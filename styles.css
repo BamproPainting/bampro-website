@@ -826,3 +826,20 @@ body { overflow-x: clip; }
 .hero-social .socials a:hover { background: var(--green); border-color: var(--green); color: var(--black); }
 @media (max-width: 760px) { .hero-social { margin-top: 1.5rem; } }
 .socials a[aria-label*="Facebook"] svg { transform: scale(1.25); }
+
+/* ===== Privacy policy page ===== */
+.legal-top { border-bottom: 1px solid var(--line); background: #fff; }
+.legal-top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1rem 0; }
+.legal-top img { width: 150px; }
+.legal-back { font-weight: 700; font-size: .95rem; text-decoration: none; color: var(--green-dark); }
+.legal-back:hover { text-decoration: underline; }
+.legal .wrap { max-width: 760px; }
+.legal h1 { font-family: var(--serif); font-weight: 400; font-size: clamp(2.4rem, 5vw, 3.4rem); margin-bottom: .5rem; }
+.legal h2 { font-size: clamp(1.4rem, 2.4vw, 1.75rem); margin: 2.5rem 0 .8rem; }
+.legal p, .legal li { color: var(--ink); margin-bottom: .9rem; }
+.legal ul { padding-left: 1.2rem; margin: 0 0 1rem; }
+.legal a { color: var(--green-dark); font-weight: 600; }
+.legal-date { color: var(--muted) !important; margin-bottom: 2rem !important; }
+.legal-note { margin-top: 2.5rem; padding-top: 1.25rem; border-top: 1px solid var(--line); color: var(--muted) !important; font-size: .95rem; }
+.form-privacy { margin: .9rem 0 0; font-size: .85rem; color: var(--muted); text-align: center; }
+.form-privacy a { color: var(--green-dark); font-weight: 700; }

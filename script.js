@@ -324,7 +324,13 @@ drop.querySelectorAll('a').forEach(a => a.addEventListener('click', e => {
     try {
       const res = await fetch('/', { method: 'POST', body: data });
       if (!res.ok) throw new Error(res.status);
-      window.location.href = '/thanks.html';
+      // Analytics: count the enquiry as a lead, then go to the thank-you page
+      let left = false;
+      const go = () => { if (left) return; left = true; window.location.href = '/thanks.html'; };
+      if (typeof gtag === 'function') {
+        gtag('event', 'generate_lead', { form_name: 'quote', project_type: data.get('service') || '', event_callback: go, event_timeout: 1500 });
+        setTimeout(go, 1600);
+      } else go();
     } catch (err) {
       msg.textContent = 'Something went wrong sending your enquiry. Please try again, or call 0411 804 355.';
       msg.hidden = false;
@@ -332,3 +338,15 @@ drop.querySelectorAll('a').forEach(a => a.addEventListener('click', e => {
     }
   });
 }
+
+// Analytics: taps on phone, email and social links
+document.addEventListener('click', e => {
+  const a = e.target.closest('a[href]');
+  if (!a || typeof gtag !== 'function') return;
+  const href = a.getAttribute('href');
+  const where = a.closest('section, header, footer');
+  const place = where ? (where.id || where.className.split(' ')[0]) : 'page';
+  if (href.startsWith('tel:')) gtag('event', 'phone_click', { link_location: place });
+  else if (href.startsWith('mailto:')) gtag('event', 'email_click', { link_location: place });
+  else if (/facebook\.com|instagram\.com/.test(href)) gtag('event', 'social_click', { network: href.includes('facebook') ? 'facebook' : 'instagram', link_location: place });
+});
